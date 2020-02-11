@@ -33,9 +33,7 @@ deleteLetterHandler = (letterIndex) => {
   const letters = this.state.body.split('');
   letters.splice(letterIndex, 1);
   const updatedText = letters.join('');
-  console.log(updatedText);
   
-  //const someText = this.state.someText
   this.setState({ body : updatedText })
 
 }
@@ -70,8 +68,6 @@ deleteLetterHandler = (letterIndex) => {
             <h1>{this.state.title}</h1>
             <p>{this.state.body}</p>
             <ValidationComponent check={this.state.lenght} />
-            {/* {console.log(`tiene  ${(this.state.someText.body.split(''))} caracteres `)}  */}
-            {console.log(allLetters)}
             {letter}
       </div>
     )
